@@ -187,7 +187,7 @@ function render() {
       
 "<td>" +
 (agotado
-  ? '<span class="agotado">Sin stock</span>'
+  ? '<span class="agotado">Agotado</span>'
   : p.stock) +
 "</td>" +
 
