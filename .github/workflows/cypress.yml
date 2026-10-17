@@ -1,9 +1,11 @@
 name: Pruebas Cypress
+
 on: [push, pull_request]
 
 jobs:
   cypress-run:
     runs-on: ubuntu-24.04
+
     steps:
       - name: Descargar el codigo
         uses: actions/checkout@v4
@@ -21,7 +23,7 @@ jobs:
           name: cypress-video
           path: cypress/videos
 
-                - name: Guardar capturas si algo falla
+      - name: Guardar capturas si algo falla
         if: failure()
         uses: actions/upload-artifact@v4
         with:
