@@ -10,10 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarProductos();
 
   // EJERCICIO 2: Restaurar la sesion al cargar la pagina
-  if (localStorage.getItem("sesion") === "activa") {
-    document.getElementById("login").classList.add("oculto");
-    document.getElementById("admin").classList.remove("oculto");
-  }
+  //if (localStorage.getItem("sesion") === "activa") {
+    //document.getElementById("login").classList.add("oculto");
+    //document.getElementById("admin").classList.remove("oculto");
+  //}
+
+
+  // EJERCICIO 4: Desactivar intencionalmente
+  // la restauracion de sesion
+
+   //if (localStorage.getItem("sesion") === "activa") {
+    // document.getElementById("login").classList.add("oculto");
+    // document.getElementById("admin").classList.remove("oculto");
+   //}
+
+
 });
 
 /* ---------- LOGIN ---------- */
