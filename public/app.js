@@ -110,7 +110,7 @@ function guardarProducto() {
     return;
   }
 
-  if (isNaN(precio) || precio < 0) {
+  if (isNaN(precio) || precio <= 0) {
     msg.textContent = "El precio debe ser un numero mayor que 0.";
     return;
   }
